@@ -14,7 +14,7 @@ class Address (
     var province : String = "",
     var county : String = "",
     var fullAddress : String = "",
-    var addressTitle : String = "siliniz",
+    var addressTitle : String = "",
     var default : Boolean = false
 
 ) : Serializable {
