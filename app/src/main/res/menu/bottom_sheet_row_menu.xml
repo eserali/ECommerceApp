@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/editAddress"
+        android:title="Edit"
+        android:enabled="true"
+        android:visible="true"
+        app:icon="@drawable/edit_filled_icon">
+
+
+    </item>
+
+    <item
+        android:id="@+id/deleteAddress"
+        android:title="Delete"
+        android:enabled="true"
+        android:visible="true"
+        app:icon="@drawable/delete_icon">
+
+    </item>
+
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_navigation_graph"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_orderActivity"
+            app:destination="@id/orderActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchasedProductFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.PurchasedProductFragment"
+        android:label="fragment_purchased_product"
+        tools:layout="@layout/fragment_purchased_product" >
+        <action
+            android:id="@+id/action_purchasedProductFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="product"
+            app:argType="com.alieser.libraryproject.data.model.Product" >
+
+        </argument>
+
+        <action
+            android:id="@+id/action_productDetailFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <argument
+            android:name="purchased"
+            app:argType="com.alieser.libraryproject.data.model.PurchasedProduct" />
+        <action
+            android:id="@+id/action_productDetailFragment_to_purchasedProductFragment"
+            app:destination="@id/purchasedProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_addressFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.alieser.libraryproject.ui.view.product.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address" >
+        <action
+            android:id="@+id/action_addAddressFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+        <argument
+            android:name="selectedAddress"
+            app:argType="com.alieser.libraryproject.data.model.Address" />
+        <argument
+            android:name="whichFragment"
+            app:argType="com.alieser.libraryproject.data.util.WhichFragment" />
+        <action
+            android:id="@+id/action_addAddressFragment_to_order_navigation_graph"
+            app:destination="@id/order_navigation_graph" />
+    </fragment>
+    <activity
+        android:id="@+id/orderActivity"
+        android:name="com.alieser.libraryproject.ui.view.order.OrderActivity"
+        android:label="activity_order"
+        tools:layout="@layout/activity_order" />
+    <include app:graph="@navigation/order_navigation_graph" />
+</navigation>

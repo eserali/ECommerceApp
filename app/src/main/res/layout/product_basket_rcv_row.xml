@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBasketRow"
+        style="@style/product_detail_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/ivProductBasketRow"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtTotalBasketRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Total"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/ivProductBasketRow"
+                app:layout_constraintTop_toBottomOf="@+id/txtProductNameBasketRow" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                style="@style/product_detail_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProductBasketRow"
+                app:layout_constraintStart_toEndOf="@+id/ivProductBasketRow">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="110dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/card_view_border">
+
+                    <ImageView
+                        android:id="@+id/ivMinus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/minus_icon" />
+
+                    <ImageView
+
+                        android:id="@+id/ivPlus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/plus_icon" />
+
+                    <TextView
+                        android:id="@+id/txtAmount"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/ivPlus"
+                        app:layout_constraintHorizontal_bias="0.555"
+                        app:layout_constraintStart_toEndOf="@+id/ivMinus"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.333" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/app_theme_light"
+                android:tint="#8E8486"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/delete_icon" />
+
+            <TextView
+                android:id="@+id/txtProductNameBasketRow"
+                android:layout_width="222dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="16dp"
+                android:text="Product Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/ivProductBasketRow"
+                app:layout_constraintTop_toTopOf="@+id/ivProductBasketRow" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

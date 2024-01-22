@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057376988477",
+    "project_id": "libraryproject-31cca",
+    "storage_bucket": "libraryproject-31cca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057376988477:android:86ce0c12d4bd779bf9a954",
+        "android_client_info": {
+          "package_name": "com.alieser.libraryproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvC4y2BV1rW4mOnjVhzSFca9s3_moJmk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

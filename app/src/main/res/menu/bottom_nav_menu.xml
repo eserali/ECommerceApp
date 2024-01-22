@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/productFragment"
+        android:checkable="false"
+
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/purchasedProductFragment"
+        android:enabled="true"
+        android:icon="@drawable/purchased_icon"
+
+        android:title="Purchased">
+
+    </item>
+
+    <item
+        android:id="@+id/basketFragment"
+        android:enabled="true"
+        android:icon="@drawable/basket_icon"
+        android:title="Basket">
+
+    </item>
+
+    <item
+        android:id="@+id/accountFragment"
+        android:enabled="true"
+        android:icon="@drawable/account_icon"
+        android:title="Account">
+
+    </item>
+
+
+</menu>

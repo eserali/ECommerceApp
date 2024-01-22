@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_navigation_graph"
+    app:startDestination="@id/deliveryAddresFragment">
+
+    <fragment
+        android:id="@+id/deliveryAddresFragment"
+        android:name="com.alieser.libraryproject.ui.view.order.DeliveryAddresFragment"
+        android:label="fragment_delivery_addres"
+        tools:layout="@layout/fragment_delivery_addres" >
+        <action
+            android:id="@+id/action_deliveryAddresFragment_to_creditCardInfoFragment"
+            app:destination="@id/creditCardInfoFragment" />
+        <action
+            android:id="@+id/action_deliveryAddresFragment_to_addressBottomSheetFragment"
+            app:destination="@id/addressBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditCardInfoFragment"
+        android:name="com.alieser.libraryproject.ui.view.order.CreditCardInfoFragment"
+        android:label="fragment_credit_card_info"
+        tools:layout="@layout/fragment_credit_card_info" >
+        <argument
+            android:name="totalAmount"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_creditCardInfoFragment_to_purchasedProductNestedGraph"
+            app:destination="@id/purchasedProductNestedGraph" />
+    </fragment>
+    <dialog
+        android:id="@+id/addressBottomSheetFragment"
+        android:name="com.alieser.libraryproject.data.util.AddressBottomSheetFragment"
+        android:label="fragment_address_bottom_sheet"
+        tools:layout="@layout/fragment_address_bottom_sheet" >
+        <action
+            android:id="@+id/action_addressBottomSheetFragment_to_deliveryAddresFragment"
+            app:destination="@id/deliveryAddresFragment" />
+        <action
+            android:id="@+id/action_addressBottomSheetFragment_to_addAddressNestedGraph"
+            app:destination="@id/addAddressNestedGraph" />
+
+    </dialog>
+    <navigation android:id="@+id/addAddressNestedGraph"
+        app:startDestination="@id/addAddressFragment6">
+        <fragment
+            android:id="@+id/addAddressFragment6"
+            android:name="com.alieser.libraryproject.ui.view.product.AddAddressFragment"
+            android:label="fragment_add_address"
+            tools:layout="@layout/fragment_add_address" />
+        <action
+            android:id="@+id/action_addAddressFragment_to_order_navigation_graph"
+            app:destination="@id/order_navigation_graph" />
+        <argument
+            android:name="selectedAddress"
+            app:argType="com.alieser.libraryproject.data.model.Address" />
+        <argument
+            android:name="whichFragment"
+            app:argType="com.alieser.libraryproject.data.util.WhichFragment" />
+    </navigation>
+    <navigation android:id="@+id/purchasedProductNestedGraph"
+        app:startDestination="@id/purchasedProductFragment2">
+        <fragment
+            android:id="@+id/purchasedProductFragment2"
+            android:name="com.alieser.libraryproject.ui.view.product.PurchasedProductFragment"
+            android:label="fragment_purchased_product"
+            tools:layout="@layout/fragment_purchased_product" />
+    </navigation>
+
+
+</navigation>

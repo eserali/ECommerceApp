@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_theme">#152C40</color>
+    <color name="app_theme_light">#FFFFFF</color>
+    <color name="edit_text_border">#049DBF</color>
+    <color name="edit_text_background">#f6fbff</color>
+    <color name="card_view">#0378A6</color>
+
+</resources>

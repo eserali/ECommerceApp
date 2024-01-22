@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".ui.view.product.AccountFragment">
+
+    <TextView
+        android:id="@+id/txtMyBasketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="My Account"
+        android:textColor="@color/app_theme_light"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMyAccount"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTintMode="add"
+        android:src="@drawable/account_icon"
+        app:layout_constraintStart_toStartOf="@+id/txtMyBasketTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyBasketTitle" />
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/cvMyAccount"
+        style="@style/custom_card_view_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMyAccount">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtMyInformation"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/settings_icon"
+                android:drawableRight="@drawable/arrow_right_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:fontFamily="@font/lora"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="Settings"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtMyFavorites"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lora"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/my_favorites_icon"
+                android:drawableRight="@drawable/arrow_right_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="Favorite"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txtMyInformation"
+                app:layout_constraintTop_toBottomOf="@+id/txtMyCupons" />
+
+            <TextView
+                android:id="@+id/txtMyAddresses"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/my_address_icon"
+                android:drawableRight="@drawable/arrow_right_icon"
+                android:fontFamily="@font/lora"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="Address"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txtMyInformation"
+                app:layout_constraintTop_toBottomOf="@+id/txtMyInformation" />
+
+            <TextView
+                android:id="@+id/txtMyCupons"
+                android:fontFamily="@font/lora"
+                android:textStyle="bold"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/my_cupons_icon"
+                android:drawableRight="@drawable/arrow_right_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="Cupon"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txtMyInformation"
+                app:layout_constraintTop_toBottomOf="@+id/txtMyAddresses" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

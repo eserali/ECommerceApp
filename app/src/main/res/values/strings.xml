@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ECommerceApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="greetingText">Welcome\nBack</string>
+    <string name="userNameEditText">Email or Username</string>
+    <string name="passwordEditText">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="signInButton">SIGN IN</string>
+    <string name="dontHaveAccountText">Do not have an account?</string>
+    <string name="createAccountText"> \tSign Up</string>
+    <string name="signUpButton">SIGN UP</string>
+
+
+</resources>

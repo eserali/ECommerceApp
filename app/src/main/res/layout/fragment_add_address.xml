@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.product.AddAddressFragment" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAddressesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Add Address"
+        android:textColor="@color/app_theme_light"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.517"
+       />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/left_arrow_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/app_theme"
+                android:src="@drawable/call_filled_icon"
+                android:tint="@color/app_theme"
+                app:layout_constraintBottom_toBottomOf="@+id/txtPhoneNumber"
+                app:layout_constraintEnd_toStartOf="@+id/txtPhoneNumber"
+                app:layout_constraintStart_toStartOf="@+id/ivName"
+                app:layout_constraintTop_toTopOf="@+id/txtPhoneNumber"
+                app:tint="@color/app_theme" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/ivName"
+                app:layout_constraintTop_toBottomOf="@+id/txtContactInf" />
+
+            <ImageView
+                android:id="@+id/ivName"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/app_theme"
+                android:src="@drawable/account_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/txtName"
+                app:layout_constraintStart_toStartOf="@+id/txtContactInf"
+                app:layout_constraintTop_toTopOf="@+id/txtName"
+                app:tint="@color/app_theme" />
+
+            <TextView
+                android:id="@+id/txtContactInf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Contact Information"
+                android:textColor="@color/app_theme"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtSurname"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Surname"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtName"
+                app:layout_constraintStart_toEndOf="@+id/txtName"
+                app:layout_constraintTop_toTopOf="@+id/txtName"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txtSurname"
+                app:layout_constraintStart_toStartOf="@+id/txtName"
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutProvince"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+
+                android:hint="Province"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/cbHome"
+                app:layout_constraintTop_toBottomOf="@+id/cbHome">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTvProvinces"
+                    android:inputType="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textColorHint="@color/app_theme"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+
+                </AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCounty"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="40dp"
+                android:hint="County"
+                app:layout_constraintEnd_toEndOf="@+id/cbWorkplace"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutProvince"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayoutProvince">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTvCounties"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="@color/app_theme"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+
+                </AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtAddressInf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Address Information"
+                android:textColor="@color/app_theme"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayoutCounty"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutProvince"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutProvince" />
+
+            <EditText
+                android:id="@+id/txtAddressTitle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Address Title"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtAddress"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txtAddress"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/app_theme"
+                android:text="CANCEL"
+                app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/txtAddressTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddressTitle" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/app_theme"
+                android:text="SAVE"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCancel"
+                app:layout_constraintEnd_toEndOf="@+id/txtAddressTitle"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnCancel"
+                app:layout_constraintTop_toTopOf="@+id/btnCancel" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbHome"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/app_theme"
+                android:button="@drawable/custom_checkbox_selector"
+                android:buttonTint="@color/app_theme"
+                android:checked="false"
+                android:drawableStart="@drawable/home_icon"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/app_theme"
+                android:elevation="5dp"
+                android:paddingStart="6dp"
+                android:text="Home"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtAddressInf"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddressInf"
+                app:useMaterialThemeColors="false" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:id="@+id/cbWorkplace"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:button="@drawable/custom_checkbox_selector"
+                android:buttonTint="@color/app_theme"
+                android:checked="false"
+                android:drawableStart="@drawable/job_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:elevation="5dp"
+                android:paddingStart="6dp"
+                android:text="Workplace"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cbHome"
+                app:layout_constraintStart_toEndOf="@+id/cbHome"
+                app:layout_constraintTop_toTopOf="@+id/cbHome"
+                app:useMaterialThemeColors="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
