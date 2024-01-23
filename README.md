@@ -9,7 +9,7 @@
 <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a>    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
 <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.firebase.google.com/" target="_blank" rel="noreferrer"> 
 
-### Proje Anlatım
+### Proje Açıklaması
 
 * Bu uygulama MVVM(Model-View-Viewmodel) ve repository mimarisine sahip olup live data ile desteklenmektedir.
 * Veritabanındaki mevcut her değişiklik anında ekranlarda gösterilmektedir.
