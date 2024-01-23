@@ -43,7 +43,7 @@
 |---|---|---|---|---|
 | ![basket](https://github.com/eserali/ECommerceApp/assets/157403007/198521e4-856f-4b2c-8db1-aea4c52b9b60) | ![My Account](https://github.com/eserali/ECommerceApp/assets/157403007/2b013a30-38d9-4e07-a590-5182e6fdfda2) |![addressList](https://github.com/eserali/ECommerceApp/assets/157403007/7eded1d1-aab6-49f1-ab61-1f374caab6ec)  |![add address](https://github.com/eserali/ECommerceApp/assets/157403007/10dd64e0-6265-4943-9bb3-fefee7c05d4c) |![Detail](https://github.com/eserali/ECommerceApp/assets/157403007/a4b88af8-c4c1-47bd-b89b-ea37335fa1f9) |
 
-| Confirm Order  | Chenge Address  | Add Credit Card  |
+| Confirm Order  | Change Address  | Add Credit Card  |
 |---|---|---|
 | ![confirmOrder](https://github.com/eserali/ECommerceApp/assets/157403007/2fb67c6e-2aae-4c1d-9548-7ace7bc331ad) |![chengeAddress](https://github.com/eserali/ECommerceApp/assets/157403007/8995e393-794f-4f47-b1c7-1a34bf6a6ed7)|![add credit card](https://github.com/eserali/ECommerceApp/assets/157403007/cd25d75b-14ed-45c2-91ae-f1de7724faf4)|
 
