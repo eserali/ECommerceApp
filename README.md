@@ -9,7 +9,7 @@
 <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a>    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
 <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.firebase.google.com/" target="_blank" rel="noreferrer"> 
 
-### Proje Açıklaması
+### Proje Açıklaması(TR)
 
 * Bu uygulama MVVM(Model-View-Viewmodel) ve repository mimarisine sahip olup live data ile desteklenmektedir.
 * Veritabanındaki mevcut her değişiklik anında ekranlarda gösterilmektedir.
@@ -29,7 +29,30 @@
 * Bu listeden varsayılan adresi değiştirebilir ya da adresiniz yoksa “Add Address” butonuna tıklayarak adres ekleme ekranına gidebilirsiniz.
 * Adresin seçilmesinin ardından sayfanın alt kısmında sepete eklediğiniz ürünlerin listesi live data aracılığıyla yer almakta adetleri parantez içinde belirtilmektedir, toplamda ödeyeceğiniz miktar sol altta yer almaktadır.
 * Ardından kullanıcı “Confirm Order” butonuna tıklayarak ödeme sayfasına geçiş yapabilir. Burada yer alan bilgileri doldururken edittextlerde verilen kurallara uymalı ve kart bilgilerini girerek “Confirm Order” butonuna tıklayarak alışverişi tamamlayabilir.
-* Ödemesi tamamlanan ürünlerin listesi bottom navigationda yer alan “Purchased” sekmesinde gözükmektedir. 
+* Ödemesi tamamlanan ürünlerin listesi bottom navigationda yer alan “Purchased” sekmesinde gözükmektedir.
+
+### Project Explanation(EN)
+* This application has MVVM (Model-View-Viewmodel) and repository architecture and is supported with live data.
+* Every available change in the database is instantly displayed on the screens.
+* Screen transitions between Activity and Fragments are made with the navigation graph.
+* The application has a structure that can register users with email and password on the login screen, this structure is supported by Google Firebase Authentication and email and password standards are determined by firebase.
+* Existing users are registered in the Authentication panel. After user registration, the user is welcomed to the main page with products.
+* The products on the home page are displayed to the user using Livedata via Firebase realtime database via Recyclerview listing and instant changes in the database are instantly displayed to the user.
+* Thanks to the searcview on the Home page, you can search for products and the list of these products is also listed using livedata.
+* The user can access detailed information by clicking on the product card of the product on the homepage. In the product detail, you can see the tablayout with features, product rating and questions.
+* The user can add the product to the basket by clicking the "Add To Basket" button and can view the products in the basket by clicking on the "Basket" tab through the bottom navigation.
+* Each time the "Add To Basket" button is clicked for different products, the badge in the basket increases so that the user realises how many products have been added to the basket.
+* Addresses are actively displayed on the My Account page, the user can make the desired address default and make it appear on the payment screen.
+* After the user clicks on the "Save" button, the current address is saved in the firebase database and is instantly displayed in the addresses list using MVVM Repository and Live data, you can also delete or edit the addresses in the addresses list.
+* The user clicks on the basket tab to see the products in the basket, where they can buy up to 10 of the same product thanks to the plus and minus button.
+* The user can delete the product from the basket by clicking the trash can in the basket line.
+* The user who keeps the products he/she wants to buy in the basket switches to the delivery address page by clicking the "Confirm Order" button. On this page, the default address is shown and when the "Add/Change" button is clicked, the Dialog Fragment opens and the available addresses are listed.
+* You can change the default address from this list or if you do not have an address, you can go to the address addition screen by clicking the "Add Address" button.
+* After selecting the address, the list of products you have added to the basket at the bottom of the page is displayed via live data, the quantities are indicated in brackets, and the amount you will pay in total is located at the bottom left.
+* Then the user can switch to the payment page by clicking the "Confirm Order" button. While filling in the information here, the user must follow the rules given in the edittext and enter the card information and complete the shopping by clicking the "Confirm Order" button.
+* The list of products whose payment is completed is shown in the "Purchased" tab in the bottom navigation.
+
+
 
 ### Project Presentation
 
