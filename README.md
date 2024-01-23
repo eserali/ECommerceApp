@@ -9,7 +9,7 @@
 <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a>    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
 <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.firebase.google.com/" target="_blank" rel="noreferrer"> 
 
-### Proje Açıklaması(TR)
+### Project Explanation(TR)
 
 * Bu uygulama MVVM(Model-View-Viewmodel) ve repository mimarisine sahip olup live data ile desteklenmektedir.
 * Veritabanındaki mevcut her değişiklik anında ekranlarda gösterilmektedir.
@@ -51,11 +51,6 @@
 * After selecting the address, the list of products you have added to the basket at the bottom of the page is displayed via live data, the quantities are indicated in brackets, and the amount you will pay in total is located at the bottom left.
 * Then the user can switch to the payment page by clicking the "Confirm Order" button. While filling in the information here, the user must follow the rules given in the edittext and enter the card information and complete the shopping by clicking the "Confirm Order" button.
 * The list of products whose payment is completed is shown in the "Purchased" tab in the bottom navigation.
-
-
-
-### Project Presentation
-
 
 ### İmages
 | Login  | SignUp  | Main  | Search  | Purchased  |
