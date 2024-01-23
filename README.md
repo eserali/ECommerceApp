@@ -1,7 +1,8 @@
 
 <h3 align="left">Ecommerceapp</h3>
 
-* ECommerceApp uygulaması bir e-ticaret uygulamasıdır.
+* ECommerceApp uygulaması bir e-ticaret uygulaması protipidir.
+* ECommerceApp application is an e-commerce application prototype.
 
 ### Technology Used
 
